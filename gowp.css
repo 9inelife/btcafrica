@@ -1,32 +1,16 @@
 
-.showcas{
-    background-color:;
-    height: 100vh;
+ .showcas{
+    background-color:#161716;
+    height:;
     color: white;
-  display: flex;
-    flex-direction: column;;
-    justify-content: center;
-    text-align: center;
-    align-items: center ;
+  display:;
+    flex-direction:;
+    justify-content:;
+    text-align:;
+    align-items: ;
     
 }
 
-.showcas a{
-    color:  black;
-    display: inline-block;
-    padding: 0.7rem 1rem;
-    background-color:whitesmoke;
-    border-radius: 5px;
-     transition: background 0.5s ease-in-out;
-}
-.showcas  a{
-     transition: background 0.5s ease-in-out;
-}
-
-.showcas a:hover{
-    background-color:gainsboro;
-     color:black;  
-}
 
 
 
