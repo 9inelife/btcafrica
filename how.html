@@ -516,17 +516,7 @@
   transform: translateY(0px);
   opacity: 1;
 }
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-
-body {
+      body {
         align-items: center;
         display: flex;
         height: 100vh;
@@ -1101,10 +1091,36 @@ body {
     <script type="text/javascript" charset="utf-8" async="" src="./BTCAFRICA – official website_files/icons.2f1ea49d1cb62a276dca.js.download"></script>
   </head>
   <body>
-      
+      <header data-v-699b422e="" class="
+            headerFarm
+            pageFarm__header
+            headerFarm--landing headerFarm--landingDark
+          ">
+          <div  class="headerFarm__logoWrap">
+            <a data-v-36afd92c="" data-v-699b422e="" href="index.html"><img  src="./BTCAFRICA – official website_files/logo.png" alt="App Logo" class="headerLogo"  style="width:5rem; height:3.4rem;"></a>
+          </div>
+      <div class="navigation">
+        <ul class="menu" >
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="index.html">Home</a></li>
+         
+          <li class="menu-item"><a href="about.html">About us</a></li>
+          <li class="menu-item"><a href="#tech">Our Technology</a></li>
+             <li class="menu-item"><a href="how.html">How it works</a></li>
+          <li class="menu-item"><a href="#foot">Contact</a></li>
+             <li data-v-0b0e0c26="" menu-name="lang" class="headerNav__item">
+              <button data-v-0b0e0c26="" class="headerNav__link">
+                <span data-v-0b0e0c26="" class="flag flag--en"></span>
+              </button>
+              
+            </li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+      </header>
   
 
-   <header data-v-699b422e="" class="
+   <!--header data-v-699b422e="" class="
             headerFarm
             pageFarm__header
             headerFarm--landing headerFarm--landingDark
@@ -1113,7 +1129,7 @@ body {
             <a data-v-36afd92c="" data-v-699b422e="" href="index.html"><img data-v-36afd92c="" src="./BTCAFRICA – official website_files/logo.png" alt="App Logo" class="headerLogo"></a>
           </div>
           <ul data-v-31c876fd="" data-v-699b422e="" class="headerNav">
-            <!---->
+           
             
           </ul>
           <ul data-v-0b0e0c26="" data-v-699b422e="" class="headerNav headerFarm__rightNav">
@@ -1167,7 +1183,7 @@ body {
               <button data-v-0b0e0c26="" class="headerNav__link">
                 <span data-v-0b0e0c26="" class="flag flag--en"></span>
               </button>
-              <!---->
+             
             </li>
           </ul>
         </header>
@@ -1182,11 +1198,12 @@ body {
               </div>
               <div class="plc-homeFarmContainer">
                 <div class="plc-homeFarmSection1__desc">
-                  <h5 class="plc-homeFarmSection1__title">
+                  <h5 class="plc-homeFarmSection1__title ">
                      HOW IT WORKS <br>
-                  <p class="reveal" style="font-size: 20px;">How do I start mining with Bitcoin Africa?
+               <div class="reveal">
+                  <p style="font-size: 20px;">How do I start mining with Bitcoin Africa?
 
-</p> </h5> 
+</p></div> </h5> 
                     
                     
                   </div></div></section>
@@ -1282,10 +1299,10 @@ body {
               }
                 
                 .item{
-                     background: url(./black2.jpg);
+                     background-color:#161716;
                 }
                 .grid{
-                     background: url(./black2.jpg);
+                     background-color:#161716;
                 }
             </style>
           
@@ -1770,5 +1787,38 @@ Pit No 15, Uruguay street, Maritama, Abuja
         }
       }
       </script>
+        <script type="text/javascript">
+    //jquery for toggle dropdown menus
+    $(document).ready(function(){
+      //toggle sub-menus
+      $(".sub-btn").click(function(){
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function(){
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
   
        </body></html>
