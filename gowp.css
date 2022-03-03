@@ -12,9 +12,23 @@
 
 
  .showcas{
-    background-color:#161716;
-    height:;
+   background-color:#161716; 
+    /* background-image: url(/bg.jpg); */
+    height:100vh;
     color: white;
+  display:;
+    flex-direction:;
+    justify-content:;
+    text-align:;
+    align-items: ;
+    
+}
+
+.showca{
+   
+     background-image:url(giff.gif); 
+    height:;
+    color:;
   display:;
     flex-direction:;
     justify-content:;
